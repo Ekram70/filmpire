@@ -1,0 +1,3 @@
+# Filmpire
+
+## Vite + React + TS
