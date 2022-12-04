@@ -1,4 +1,4 @@
-import React from 'react';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -9,10 +9,12 @@ const rootElement = document.getElementById('root') as HTMLDivElement;
 if (!rootElement) throw new Error('Failed to find the root element');
 const root = createRoot(rootElement);
 
+const theme = createTheme({});
+
 root.render(
-  <React.StrictMode>
+  <ThemeProvider theme={theme}>
     <Router>
       <App />
     </Router>
-  </React.StrictMode>
+  </ThemeProvider>
 );

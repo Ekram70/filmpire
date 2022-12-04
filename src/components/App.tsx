@@ -1,6 +1,6 @@
 import { CssBaseline } from '@mui/material';
 import { Route, Routes } from 'react-router-dom';
-import { Actors, MovieInformation, Movies, Navbar, Profile } from '.';
+import { Actors, MovieInformation, Movies, Navbar, Profile } from './';
 import useStyles from './styles';
 
 const App = () => {
